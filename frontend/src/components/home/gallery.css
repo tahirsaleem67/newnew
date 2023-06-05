@@ -1,0 +1,124 @@
+.gallery_headingg {
+    position: relative;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.gallery_headingg::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 47.5%;
+    bottom: -20px;
+    transform: translate(-50%, 0);
+    background-color: #cc292b;
+}
+
+.gallery_btns {
+    text-align: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.gallery_btns button {
+    margin-left: 3%;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    background: none;
+    border: none;
+    border-radius: 40px;
+
+}
+
+.gallery_btns button:hover {
+    border: 1px solid black;
+    border-radius: 40px;
+    background-color: #011c38;
+    color: white;
+    border: none;
+    /* transform: scale(1.09); */
+    transition: all ease-out 0.2s;
+
+}
+
+.gallery_img img {
+
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+.gallery_img {
+    /* border: 1px solid red; */
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1.5rem 0rem;
+    position: relative;
+    transition: all 1s;
+
+}
+
+.img_below {
+    width: 270px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    top: 8%;
+    /* Change 'bottom' to 'top' */
+    background-image: linear-gradient(90deg, rgba(43, 44, 108, 0.56) 43%, rgba(251, 194, 49, 0.66) 100%);
+    padding: 10px 15px;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+    /* Change 'bottom' to 'top' */
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.gallery_img:hover .img_below {
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    /* Change 'bottom' to 'top' */
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .gallery_btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .gallery_btns button {
+        font-size: 1.2em;
+        margin-left: -10rem;
+    }
+
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .gallery_btns {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .gallery_btns button {
+        margin-left: -15rem;
+
+    }
+}

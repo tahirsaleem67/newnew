@@ -1,0 +1,120 @@
+.sign-up{
+    width: 100%;
+    height: 100%;
+    min-height: 70vh;
+    /* margin: 4.3rem 0; */
+    background-color: #011C38;
+}
+.signup-image img{
+    width: 100%;
+}
+.mySwiper-image{
+    width: 100%;
+    border-radius: 20px;
+}
+.h2-clr{
+    color: white;
+}
+.icons{
+    z-index: 1;
+    margin: 2px 0;
+    font-size: 19px;
+}
+.placeholder-p{
+    padding-left: 2.5rem;
+}
+.PhoneInputInput {
+    flex: 1 1;
+    min-width: 0;
+    border: none !important;
+}
+.PhoneInputInput:focus {
+    outline: none !important;
+    background: none !important;
+    border: none !important;
+}
+.phone{
+    background-color: white;
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+}
+/* .mySwiper{
+    width: 100%;
+}
+.organization-image img {
+    width: 100%;
+    height: 570px;
+} */
+
+/* @media (max-width: 980px) {
+
+    .organization-image {
+        width: 100%;
+        height: 500px;
+    }
+
+} */
+
+
+
+.signup_form_start{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 2rem 0rem;
+}
+.signup_form_start span{
+    color: whitesmoke;
+    margin-left: 0.5rem;
+    font-size: 19px;
+}
+.signup_input_main{
+    border: 1px solid green;
+    width: 48%;
+    /* background-color: white; */
+    color: white;
+    height: 3.1rem;
+    border-radius: 20px;
+    background-color: #195370;
+    
+}
+.signup_input_main input, select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+    height: 2.5rem;
+}
+input[type="file"]{
+    margin-top: 0.5rem;
+}
+.signup_input_main span{
+    margin-top: 0.5rem;
+    font-size: 20px;
+    
+}
+.signup_input_main input:focus{
+    outline: none !important;
+    border: none !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+.signup_form_start input,::placeholder{
+    color: white;
+
+}
+.signup_btn{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.signup_btn:hover{
+    background-color: #2b2c6c !important;
+    cursor: pointer !important;
+    transform: scale(1.09) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    transition: all linear 0.2s;
+}

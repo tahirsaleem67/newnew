@@ -1,0 +1,100 @@
+.courses-h h1 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 200;
+    color: rgb(77, 76, 76);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.courses-h {
+    /* border: 1px solid red; */
+}
+
+.pack {
+    width: 530px;
+    min-height: 230px;
+    /* background-color: rebeccapurple; */
+    box-shadow: rgba(78, 75, 94, 0.15) 0px 4px 10px 4px;
+    cursor: pointer;
+    transition: .5s all;
+}
+.pack:hover {
+    transform: scale(1.02);
+}
+
+.cource-pack {
+    /* border: 1px solid red; */
+}
+
+.pack-right {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+
+.pack-h {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: rgb(90, 91, 92);
+}
+
+.pack-img {
+    /* background-color: black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.pack-text p {
+    padding-right: 20px;
+    font-size: 13px;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+.pack-img img {
+    width: 100px;
+}
+
+
+
+
+@media (max-width:990px) {
+    .pack-h {
+        text-align: center;
+    }
+
+    .pack-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .pack-text p {
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    
+}
+
+@media (max-width:368px) {
+    .pack-h {
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:500px) {
+    .courses-h h1 {
+
+        font-size: 25px;
+
+    }
+}

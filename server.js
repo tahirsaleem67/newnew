@@ -3,8 +3,10 @@ let myExpress = require('express');
 let app = myExpress();
 
 app.use(myExpress.json())
+let path = require("path")
 
-app.listen(3010, function () {
+let port = process.env.port || 3010
+app.listen(port, function () {
 
     console.log("server live ho gya")
 
@@ -299,5 +301,17 @@ app.delete('/deleteGallery', async function (req, res) {
     } catch (e) {
         console.log(e)
     }
+
+})
+
+app.use(myExpress.static(path.join(__dirname, "./frontend/build")))
+
+app.get("*", (req, res) => {
+    res.sendFile(
+        path.join(__dirname, "./frontend/build/index.html"),
+    function (err) {
+            res.status(500).send(err)
+        }
+    )
 })
 app.use(myExpress.static('./server/pictures'))

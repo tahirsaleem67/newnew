@@ -1,0 +1,244 @@
+.contact-heading {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: rgb(48, 48, 48);
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+}
+
+.contact-heading span {
+
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+
+}
+
+.contact-heading::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    left: 5%;
+    bottom: -15px;
+    transform: translate(-50%, 0);
+    background-color: #cc292b;
+}
+
+
+.contact-heading-2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: rgb(48, 48, 48);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.contact-heading-2 span {
+
+    color: rgb(34, 34, 34);
+    font-weight: 500;
+
+}
+
+.contact-icon-box {
+    width: 100%;
+    min-height: 10rem;
+    /* background-color: rgb(196, 188, 188); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    transition: 1s;
+
+}
+
+.contact-icons {
+    color: rgb(58, 53, 92);
+    width: 6rem;
+    height: 9rem;
+    /* background-color: #cc292b; */
+    font-size: 4.4rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: 1s;
+
+
+}
+
+.contact-icons:hover {
+    background: -webkit-linear-gradient(194deg, rgba(30, 155, 183, 1) 35%, rgba(96, 195, 128, 1) 90%);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.contact-icons:hover p {
+    color: white !important;
+}
+
+.contact-icons p {
+    color: black !important;
+    font-size: 1rem;
+
+}
+
+.contact-form-h {
+    font-weight: 400;
+    color: rgb(41, 40, 40);
+    text-align: center;
+}
+
+.contact-form-h-2 {
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-form {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-start {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.contact-form-start input {
+    padding: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 2px solid lightgray !important;
+    height: 62px !important;
+    border-radius: 10px !important;
+    width: 300px;
+}
+
+.contact-form-start input,
+::placeholder {
+    color: black !important;
+}
+
+.contact-form-end {
+    padding: 1rem;
+}
+
+.contact-form-end input,textarea {
+    padding: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 2px solid lightgray !important;
+    height: 110px !important;
+    border-radius: 10px !important;
+    width: 670px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.contact-form-btn {
+    padding: 1rem;
+}
+
+.contact-form-btn button {
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.7rem 2rem;
+    margin: 30px 0;
+    /* border: none; */
+    background-color: white;
+    color: black;
+}
+.contact-form-btn button:hover{
+    background-color: #262F76;
+    color: white;
+    transform: scale(1.09);
+    transition: all linear 0.3s;
+
+}
+
+@media (max-width: 680px) {
+
+    .contact-form-start {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form-end {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-form-start {
+        display: flex;
+           gap: 0rem;
+        padding: 1rem;
+    }
+    
+.contact-form-end input,textarea {    
+    width: 300px;
+}
+
+}
+
+
+@media (max-width: 415px) {
+
+    .contact-icons {
+        /* background-color: #cc292b; */
+        font-size: 3rem;
+
+    }
+    .contact-icon-box {
+        gap: 1rem;
+    
+    }
+    .contact-form-start {
+        display: flex;
+           gap: 0rem;
+        padding: 1rem;
+    }
+
+    .contact-heading::before {
+
+        left: 25% !important;
+        bottom: -15px;
+
+    }
+
+    .contact-heading-2 {
+
+        margin-top: 2rem;
+
+    }
+
+
+
+}
+
+@media (max-width: 820px) {
+
+    .contact-heading::before {
+        left: 8%;
+        bottom: -15px;
+    }
+
+    .contact-heading-2 {
+        margin-bottom: 3rem;
+    }
+
+}

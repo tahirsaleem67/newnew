@@ -1,0 +1,98 @@
+.wrap {
+    height: max-content;
+    /* max-content fits everything it needs!!! takes away need for overflow cuz it magically emlarges the div if needed */
+    position: relative;
+    text-align: center;
+
+}
+
+.parallax {
+    background-image: url("./pic.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 9px;
+}
+
+@media screen and (max-width: 360px) {
+    .contact_btn {
+        padding: 0.5rem 1rem;
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 361px)  and (max-width: 768px){
+    .contact_btn {
+        padding: 0.5rem 1rem;
+        font-size: 1em;
+    }
+}
+
+
+.intro-container {
+
+    background-color: transparent;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    border-radius: 10px;
+
+}
+
+.image-box-1 {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    transform: scale(1.1);
+    border-radius: 5px;
+
+}
+.image-box-1 img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.image-box-2 {
+    width: 250px;
+    height: 200px;
+    text-align: center;
+    transform: scale(1.1);
+
+}
+.image-box-2 img {
+    width: 100%;
+
+    border-radius: 10px;
+
+}
+.intro-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 0.1px;
+    font-weight: 400;
+    font-family: Montserrat;
+}
+
+.intro-text-1{
+    font-size: 12px;
+    padding-top: 16px;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+
+@media (max-width: 991px) {
+
+    .intro-container {
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

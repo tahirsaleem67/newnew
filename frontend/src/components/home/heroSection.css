@@ -1,0 +1,184 @@
+.hero-bg-img {
+    background-image: linear-gradient(90deg, rgba(249, 250, 255, 0.94) 23.22%, rgba(249, 250, 255, 0) 111.71%), url("./heroSection1.png");
+    width: 100%;
+    background-size: cover;
+    /* height: auto;
+    min-height: 80vh; */
+}
+
+.row-sytle {
+    width: 100%;
+    height: auto;
+    
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+.hero-Heading {
+    margin-top: 5rem;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 58px !important;
+    line-height: 60px !important;
+    letter-spacing: 0.05em !important;
+    color: #000000;
+    margin-left: 1.3rem;
+}
+
+.hero-Heading span {
+    color: #5278FF;
+}
+
+.btn-enroll {
+    padding: 0.8rem 1.5rem !important;
+    color: white !important;
+    border: 1px solid white !important;
+    font-weight: 500 !important;
+    border: 1px solid black !important;
+    margin-left: 1.3rem;
+    width: 172px !important;
+    background: #2b2c6c !important;
+    font-weight: 500 !important;
+    border-radius: 5px !important;
+    font-size: 20px !important;
+    
+}
+.btn-enroll:hover{
+    background-color: #2b2c6c !important;
+    cursor: pointer !important;
+    transform: scale(1.09) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    transition: all linear 0.2s;
+}
+
+.bg-from {
+    margin-left: 1.3rem;
+    width: 449px;
+    margin-top: 2rem;
+    background: #2b2c6c;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 5rem !important;
+}
+
+.icon-style {
+    color: #FFFFFF;
+    margin-left: 2rem;
+}
+
+.search-style {
+    margin-left: 0.5rem;
+    width: 10rem;
+    background-color: transparent !important;
+    /* outline: none !important; */
+    border: none !important;
+}
+
+.search-style::placeholder {
+    color: #FFFFFF !important;
+}
+.btn-search {
+    width: fit-content !important;
+    height: 35px !important;
+    color: #000000 !important;
+    background: #FFFFFF !important;
+    border-radius: 15px;
+    left: 20rem;
+    position: absolute;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 17px !important;
+    line-height: 21px !important;
+    letter-spacing: 0.05em !important;
+}
+.btn-search:hover{
+    background-color: black !important;
+    cursor: pointer !important;
+    transform: scale(1.09) !important;
+    color: white !important;
+    font-weight: 700 !important;
+    transition: all linear 0.2s;
+}
+
+@media screen and (max-width: 580px) {
+    .bg-from {
+        width: 349px;
+        /* height: 65px; */
+        background: #5278FF;
+        border-radius: 40px;
+        position: relative;
+    }
+
+    .search-style::placeholder {
+        color: #FFFFFF;
+    }
+
+    .btn-search {
+        width: 95px !important;
+        height: 35px !important;
+        color: #000000 !important;
+        background: #FFFFFF !important;
+        border-radius: 20px;
+        left: 15rem;
+        position: absolute;
+
+        font-style: normal !important;
+        font-weight: 500 !important;
+        font-size: 17px !important;
+        line-height: 21px !important;
+        letter-spacing: 0.05em !important;
+    }
+
+    .hero-Heading {
+        font-size: 42px !important;
+    }
+
+    .btn-enroll {
+        width: 142px !important;
+        height: 42px !important;
+        border-radius: 13px !important;
+        font-size: 16px !important;
+        line-height: 30px !important;
+        letter-spacing: 0.05em !important;
+        color: #FFFFFF !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bg-from {
+        width: 250px;
+        /* height: 65px; */
+        background: #5278FF;
+        border-radius: 40px;
+        position: relative;
+    }
+
+    .search-style {
+        margin-left: 0.5rem;
+        width: 6rem;
+        background-color: transparent !important;
+        /* outline: none !important; */
+        border: none !important;
+    }
+
+    .search-style::placeholder {
+        color: #FFFFFF;
+    }
+
+    .btn-search {
+        width: 95px !important;
+        height: 35px !important;
+        color: #000000 !important;
+        background: #FFFFFF !important;
+        border-radius: 20px;
+        left: 9rem;
+        position: absolute;
+
+        font-style: normal !important;
+        font-weight: 500 !important;
+        font-size: 17px !important;
+        line-height: 21px !important;
+        letter-spacing: 0.05em !important;
+    }
+}
